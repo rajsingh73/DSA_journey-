@@ -11,7 +11,7 @@ public:
         for (int i = 0; i < digits.size(); ++i) {
             if (used[i]) continue;
             if (depth == 0 && digits[i] == 0) continue;
-            if (i > 0 && digits[i] == digits[i - 1] && !used[i - 1]) continue;
+            if (i > 0 && digits[i] == digits[i - 1] && !used[i-1]) continue;
             used[i] = true;
             solve(digits, count, value * 10 + digits[i], depth + 1, used);
             used[i] = false;
