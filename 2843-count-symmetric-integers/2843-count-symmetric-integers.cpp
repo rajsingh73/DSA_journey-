@@ -1,24 +1,22 @@
 class Solution {
- public:
-  int countSymmetricIntegers(int low, int high) {
-    int ans = 0;
-
-    for (int num = low; num <= high; ++num)
-      if (isSymmetricInteger(num))
-        ++ans;
-
-    return ans;
-  }
-
- private:
-  bool isSymmetricInteger(int num) {
-    if (num >= 10 && num <= 99)
-      return num / 10 == num % 10;
-    if (num >= 1000 && num <= 9999) {
-      const int left = num / 100;
-      const int right = num % 100;
-      return left / 10 + left % 10 == right / 10 + right % 10;
+public:
+    int countSymmetricIntegers(int low, int high) {
+        int count=0;
+        for(int i=low;i<=high;i++){
+            string s=to_string(i);
+            if(s.size()%2!=0) continue;
+            int firstend=(s.size()/2);
+            int firstsum=0;
+            for(int j=0;j<firstend;j++){
+                firstsum+=s[j]-'0';
+            }
+            int secondsum=0;
+            for(int j=firstend;j<s.size();j++){
+                secondsum+=s[j]-'0';
+            }
+            if(firstsum==secondsum) count++;
+        }
+        return count;
+        
     }
-    return false;
-  }
 };
