@@ -1,28 +1,23 @@
 class Solution {
- public:
-  bool canPartition(vector<int>& nums) {
-    const int sum = accumulate(nums.begin(), nums.end(), 0);
-    if (sum % 2 == 1)
-      return false;
-    return knapsack(nums, sum / 2);
-  }
-
- private:
-  bool knapsack(const vector<int>& nums, int subsetSum) {
-    const int n = nums.size();
-    // dp[i][j] := true if j can be formed by nums[0..i)
-    vector<vector<bool>> dp(n + 1, vector<bool>(subsetSum + 1));
-    dp[0][0] = true;
-
-    for (int i = 1; i <= n; ++i) {
-      const int num = nums[i - 1];
-      for (int j = 0; j <= subsetSum; ++j)
-        if (j < num)
-          dp[i][j] = dp[i - 1][j];
-        else
-          dp[i][j] = dp[i - 1][j] || dp[i - 1][j - num];
+public:
+    bool solve(vector<int> & nums,int target,int sub,int index,vector<vector<int>> & dp){
+        if(target==sub) return true;
+        if(index==nums.size()-1) return sub+nums[index]==target;
+        if(target<sub) return false;
+        if(dp[index][sub]!=-1) return dp[index][sub];
+        bool nottake=solve(nums,target,sub,index+1,dp);
+        bool take=false;
+        if(sub+nums[index]<=target) take=solve(nums,target,sub+nums[index],index+1,dp);
+        return dp[index][sub]=nottake | take;
     }
-
-    return dp[n][subsetSum];
-  }
+    bool canPartition(vector<int>& nums) {
+        int sum=0;
+        int n=nums.size();
+        for(int i:nums) sum+=i;
+        if(sum%2!=0) return false;
+        int target=sum/2;
+        vector<vector<int>> dp(n,vector<int>(target+1,-1));
+        return solve(nums,target,0,0,dp);
+        
+    }
 };
