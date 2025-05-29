@@ -4,14 +4,12 @@ public:
         if (first < 0 && second < 0) return true;
         if (second < 0) return false;
         if (first < 0) {
-            // Check if the pattern can match empty string like a*, a*b*, etc.
-            if (p[second] == '*') return solve(s, p, first, second - 2, dp);
+            if (p[second] == '*') return solve(s, p, first, second - 1, dp);
             else return false;
         }
         if (dp[first][second] != -1) return dp[first][second];
-
         if (p[second] == '*') {
-            bool zero_occurrence = solve(s, p, first, second - 2, dp);
+            bool zero_occurrence = solve(s, p, first, second - 1, dp);
             bool one_or_more = (p[second - 1] == s[first] || p[second - 1] == '.') && solve(s, p, first - 1, second, dp);
             return dp[first][second] = zero_occurrence || one_or_more;
         }
