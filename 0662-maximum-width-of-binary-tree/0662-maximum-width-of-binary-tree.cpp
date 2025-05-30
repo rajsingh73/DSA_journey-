@@ -22,7 +22,7 @@ public:
             for (int i = 0; i < size; i++) {
                 auto temp = q.front();
                 q.pop();
-                int currIndex = temp.second - mini; // normalize to prevent overflow
+                unsigned int currIndex = temp.second - mini; // normalize to prevent overflow
                 if (i == 0) first = currIndex;
                 if (i == size - 1) last = currIndex;
                 if (temp.first->left) q.push({temp.first->left, currIndex * 2 + 1});
