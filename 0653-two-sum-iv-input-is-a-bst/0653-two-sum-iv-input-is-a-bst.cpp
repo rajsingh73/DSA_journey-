@@ -11,35 +11,43 @@
  */
 class Solution {
 public:
+    void pushleft(TreeNode* root,stack<TreeNode*> &stl){
+        if(root==NULL) return;
+        TreeNode * temp=root;
+        while(temp){
+            stl.push(temp);
+            temp=temp->left;
+        }
+    }
+    void pushright(TreeNode * root,stack<TreeNode*> & str){
+        if(root==NULL) return;
+        TreeNode * temp=root;
+        while(temp){
+            str.push(temp);
+            temp=temp->right;
+        }
+    }
     bool findTarget(TreeNode* root, int k) {
-        map<int,int> mp;
-        TreeNode * head=root;
-        bool ans=false;
-        while(head){
-            if(head->left==NULL){
-                int rem=k-head->val;
-                if(mp.find(rem)!=mp.end()) ans=true;
-                mp[head->val]++;
-                head=head->right;
+        stack<TreeNode*> stl;
+        stack<TreeNode*> str;
+        pushleft(root,stl);
+        pushright(root,str);
+        while(!stl.empty() && !str.empty()){
+            TreeNode * templ=stl.top();
+            TreeNode * tempr=str.top();
+            if(templ==tempr) break;
+            int val=templ->val+tempr->val;
+            if(val==k) return true;
+            if(val<k){
+                stl.pop();
+                pushleft(templ->right,stl);
             }
             else{
-                TreeNode * prev=head->left;
-                while(prev->right && prev->right!=head) prev=prev->right;
-                if(prev->right==NULL){
-                    prev->right=head;
-                    head=head->left;
-                }
-                else{
-                    prev->right=NULL;
-                    int rem=k-head->val;
-                    if(mp.find(rem)!=mp.end()) ans=true;
-                    mp[head->val]++;
-                    head=head->right;
-                }
+                str.pop();
+                pushright(tempr->left,str);
             }
         }
-        return ans;
-
+        return false;
         
     }
 };
