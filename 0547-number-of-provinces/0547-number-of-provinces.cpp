@@ -1,27 +1,61 @@
+class DistJointset{
+    public:
+        vector<int> rank,parent,size;
+        DistJointset(int v){
+            rank.resize(v+1,0);
+            parent.resize(v+1);
+            size.resize(v+1,1);
+            for(int i=0;i<=v;i++) parent[i]=i;
+        }
+        int findUpar(int u){
+            if(u==parent[u]) return u;
+            return parent[u]=findUpar(parent[u]);
+        }
+        void unionbyrank(int u,int v){
+            int ul_u=findUpar(u);
+            int ul_v=findUpar(v);
+            if(ul_u==ul_v) return;
+            if(rank[ul_v]<rank[ul_u]){
+                parent[ul_v]=ul_u;
+            }
+            else if(rank[ul_v]>rank[ul_u]){
+                parent[ul_u]=ul_v;
+            }
+            else{
+                parent[ul_v]=ul_u;
+                rank[ul_u]++;
+            }
+        }
+        void unionbysize(int u,int v){
+            int ul_u=findUpar(u);
+            int ul_v=findUpar(v);
+            if(ul_u==ul_v) return;
+            if(size[ul_u]<size[ul_v]){
+                parent[ul_u]=ul_v;
+                size[ul_v]+=size[ul_u];
+            }
+            else{
+                parent[ul_v]=ul_u;
+                size[ul_u]+=size[ul_v];
+            }
+        }
+};
 class Solution {
 public:
-    void solve(vector<vector<int>>& adj,vector<int> & visited,int root){
-        if(visited[root]) return;
-        visited[root]=1;
-        for(auto it: adj[root]){
-            solve(adj,visited,it);
-        }
-    }
     int findCircleNum(vector<vector<int>>& isConnected) {
-        vector<int> visited(isConnected.size(),0);
-        vector<vector<int>> adj(isConnected.size());
-        for(int i=0;i<isConnected.size();i++){
-            for(int j=0;j<isConnected[i].size();j++){
-                if(isConnected[i][j]==1 && i!=j) adj[i].push_back(j);
+        DistJointset ds(isConnected.size());
+        int n=isConnected.size();
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                if(isConnected[i][j]==1){
+                    ds.unionbysize(i,j);
+                }
             }
         }
-        int ans=0;
-        for(int i=0;i<isConnected.size();i++){
-            if(visited[i]!=1){
-                solve(adj,visited,i);
-                ans++;
-            }
+        int count=0;
+        for(int i=0;i<n;i++){
+            if(ds.parent[i]==i) count++;
         }
-        return ans;
+        return count;
     }
 };
