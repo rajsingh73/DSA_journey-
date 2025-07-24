@@ -1,9 +1,6 @@
 class Solution {
 public:
     bool check(vector<string> v,int col,int row,int n){
-        for(int i=row;i>=0;i--){
-            if(v[i][col]=='Q') return false;
-        }
         for(int i=col;i>=0;i--){
             if(v[row][i]=='Q') return false;
         }
