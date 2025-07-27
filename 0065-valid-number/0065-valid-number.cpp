@@ -1,36 +1,31 @@
-#include <cctype>
-using namespace std;
 class Solution {
 public:
     bool isNumber(string s) {
-        int n = s.size();
-        int i = 0;
-        while (i < n && s[i] == ' ') i++;
-        if (i < n && (s[i] == '+' || s[i] == '-')) i++;
-        bool isNumeric = false;
-        bool hasDot = false;
-        bool hasExp = false;
-        while (i < n) {
-            char c = s[i];
-            if (isdigit(c)) {
-                isNumeric = true;
+        int n=s.size();
+        int i=0;
+        while(i<n && s[i]==' ') i++;
+        if(i<n && (s[i]=='-' || s[i]=='+')) i++;
+        bool hasexp=false;
+        bool digit=false;
+        bool hasdot=false;
+        while(i<n){
+            if(isdigit(s[i])){
+                digit=true;
             }
-            else if (c == '.') {
-                if (hasDot || hasExp) return false;
-                hasDot = true;
+            else if(s[i]=='.'){
+                if(hasdot || hasexp) return false;
+                hasdot=true;
             }
-            else if (c == 'e' || c == 'E') {
-                if (hasExp || !isNumeric) return false;
-                hasExp = true;
-                isNumeric = false;
-                if (i + 1 < n && (s[i + 1] == '+' || s[i + 1] == '-')) i++;
+            else if(s[i]=='e' || s[i]=='E'){
+                if(hasexp || !digit) return false;
+                hasexp=true;
+                digit=false;
+                if(i+1<n && (s[i+1]=='-' || s[i+1]=='+')) i++;
             }
-            else {
-                return false;
-            }
-
+            else return false;
             i++;
         }
-        return isNumeric;
+        return digit;
+        
     }
 };
