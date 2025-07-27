@@ -51,7 +51,7 @@ public:
             maxcol=max(maxcol,it[1]);
         }
         DistJointset ds(maxrow+maxcol+2);
-        unordered_map<int,int> mp;
+        map<int,int> mp;
         for(auto it: stones){
             int nr=it[0];
             int nc=it[1]+maxrow+1;
