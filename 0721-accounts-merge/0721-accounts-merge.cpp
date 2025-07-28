@@ -57,7 +57,7 @@ public:
                 else mp[mail]=i;
             }
         }
-        vector<string> node[n];
+        vector<string> node(n);
         for(auto it: mp){
             int u=ds.findUpar(it.second);
             node[u].push_back(it.first);
