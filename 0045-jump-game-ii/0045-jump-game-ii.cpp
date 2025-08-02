@@ -1,18 +1,20 @@
 class Solution {
 public:
     int jump(vector<int>& nums) {
-        int r=0;
-        int l=0;
-        int jump=0;
-        while(r<nums.size()-1){
-            int fast=0;
-            for(int i=l;i<=r;i++){
-                fast=max(fast,i+nums[i]);
+        if(nums.size()==1) return 0;
+        int maxi=nums[0];
+        int prev=0;
+        int count=1;
+        while(maxi<nums.size()-1){
+            int temp=maxi;
+            for(int i=prev;i<=maxi;i++){
+                temp=max(temp,i+nums[i]);
             }
-            l=r;
-            r=fast;
-            jump++;
+            count++;
+            prev=maxi;
+            maxi=temp;
         }
-        return jump;
+        return count;
+        
     }
 };
