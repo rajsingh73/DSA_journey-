@@ -1,18 +1,20 @@
 class Solution {
 public:
     int mySqrt(int x) {
+        if(x<2) return x;
         int low=0;
         int high=x;
+        int ans=0;
         while(low<=high){
-            double mid=(low+high)/2;
-            if(mid*mid ==x) return mid;
+            long long mid=low+(high-low)/2;
+            if(mid*mid==x) return mid;
             else if(mid*mid<x){
+                ans=low;
                 low=mid+1;
             }
             else high=mid-1;
         }
-        cout<<low<<" "<<high;
-        return high;
+        return ans;
         
     }
 };
