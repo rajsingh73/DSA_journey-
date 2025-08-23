@@ -7,7 +7,6 @@ public:
             alti+=gain[i];
             ans=max(ans,alti);
         }
-        ans=max(ans,alti);
         return ans; 
     }
 };
