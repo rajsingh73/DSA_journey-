@@ -10,31 +10,28 @@
  */
 class Solution {
 public:
-    int s(ListNode * head){
-        int size=0;
-        ListNode * temp=head;
-        while(temp){
-            size++;
-            temp=temp->next;
-        }
-        return size;
-    }
     int pairSum(ListNode* head) {
-        int n=s(head);
-        vector<int> store(n/2);
-        int size=0;
+        ListNode * fast=head;
+        ListNode * slow=head;
+        while(fast && fast->next){
+            fast=fast->next->next;
+            slow=slow->next;
+        }
+        ListNode * prev;
+        while(slow){
+            ListNode * nextslow=slow->next;
+            slow->next=prev;
+            prev=slow;
+            slow=nextslow;
+        }
+        ListNode * first=head;
+        ListNode * second=prev;
         int ans=0;
-        ListNode * temp=head;
-        while(temp){
-            if(size<n/2) store[size]=temp->val;
-            else{
-                int prev=n-1-size;
-                ans=max(ans,temp->val+store[prev]);
-            }
-            size++;
-            temp=temp->next;
+        while(first && second){
+            ans=max(ans,first->val+second->val);
+            first=first->next;
+            second=second->next;
         }
         return ans;
-        
     }
 };
