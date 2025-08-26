@@ -11,25 +11,18 @@
  */
 class Solution {
 public:
-    void a(TreeNode  * root,char prev,int &ans,int count){
-        if(root==NULL){
-            ans=max(ans,count);
-            return;
-        }
-        if(prev=='L'){
-            a(root->right,'R',ans,count+1);
-            a(root->left,'L',ans,0);
-        }
-        else{
-            a(root->left,'L',ans,count+1);
-            a(root->right,'R',ans,0);
-        }
+    int ans=0;
+    pair<int,int> dfs(TreeNode* root){
+        if(root==NULL) return {-1,-1};
+        auto left=dfs(root->left);
+        auto right=dfs(root->right);
+        int leftval=left.second+1;
+        int rightval=right.first+1;
+        ans=max({ans,leftval,rightval});
+        return {leftval,rightval};
     }
     int longestZigZag(TreeNode* root) {
-        int ans=0;
-        a(root->right,'R',ans,0);
-        a(root->left,'L',ans,0);
+        dfs(root);
         return ans;
-        
     }
 };
