@@ -11,31 +11,18 @@
  */
 class Solution {
 public:
-    TreeNode * find(TreeNode * root,int key){
-        if(root==NULL) return NULL;
-        if(root->right && root->right->val==key) return root;
-        if(root->left && root->left->val==key) return root;
-        TreeNode * left=find(root->left,key);
-        TreeNode * right=find(root->right,key);
-        if(left==NULL) return right;;
-        return left;;
-    }
     TreeNode* deleteNode(TreeNode* root, int key) {
         if(root==NULL) return NULL;
         if(root->val==key){
             return deleteN(root);
         }
-        TreeNode * f=find(root,key);
-        if(f==NULL) return root;
-        if(f->left && f->left->val==key) f->left=deleteN(f->left);
-        else f->right=deleteN(f->right);
+        root->left=deleteNode(root->left,key);
+        root->right=deleteNode(root->right,key);
         return root;
-
     }
     TreeNode * findright(TreeNode * root){
         if(root->right==NULL) return root;
         return findright(root->right);
-
     }
     TreeNode* deleteN(TreeNode * root){
         if(root->left==NULL) return root->right;
