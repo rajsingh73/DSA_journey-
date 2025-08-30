@@ -1,61 +1,63 @@
-class DistJointset{
+class Dist{
     public:
         vector<int> rank,parent,size;
-        DistJointset(int v){
-            rank.resize(v+1,0);
-            parent.resize(v+1);
-            size.resize(v+1,1);
-            for(int i=0;i<=v;i++) parent[i]=i;
+        Dist(int n){
+            rank.resize(n+1,0);
+            parent.resize(n+1);
+            size.resize(n+1,1);
+            for(int i =0;i<n;i++) parent[i]=i;
         }
-        int findUpar(int u){
-            if(u==parent[u]) return u;
-            return parent[u]=findUpar(parent[u]);
+        int findparent(int n){
+            if(n==parent[n]) return n;
+            return parent[n]=findparent(parent[n]);
         }
-        void unionbyrank(int u,int v){
-            int ul_u=findUpar(u);
-            int ul_v=findUpar(v);
-            if(ul_u==ul_v) return;
-            if(rank[ul_v]<rank[ul_u]){
-                parent[ul_v]=ul_u;
-            }
-            else if(rank[ul_v]>rank[ul_u]){
-                parent[ul_u]=ul_v;
+        void unionbysize(int first,int second){
+            int firstparent=findparent(first);
+            int secondparent=findparent(second);
+            if(firstparent==secondparent) return;
+            if(size[firstparent]<size[secondparent]){
+                parent[firstparent]=secondparent;
+                size[secondparent]+=size[firstparent];
             }
             else{
-                parent[ul_v]=ul_u;
-                rank[ul_u]++;
+                parent[secondparent]=firstparent;
+                size[firstparent]+=size[secondparent];
             }
         }
-        void unionbysize(int u,int v){
-            int ul_u=findUpar(u);
-            int ul_v=findUpar(v);
-            if(ul_u==ul_v) return;
-            if(size[ul_u]<size[ul_v]){
-                parent[ul_u]=ul_v;
-                size[ul_v]+=size[ul_u];
+        void unionbyrank(int first,int second){
+            int firstparent=findparent(first);
+            int secondparent=findparent(second);
+            if(firstparent==secondparent) return;
+            if(rank[firstparent]<rank[secondparent]){
+                parent[firstparent]=secondparent;
+            }
+            else if(rank[firstparent]>rank[secondparent]){
+                parent[secondparent]=firstparent;
             }
             else{
-                parent[ul_v]=ul_u;
-                size[ul_u]+=size[ul_v];
+                parent[firstparent]=secondparent;
+                rank[secondparent]++;
             }
         }
+
 };
 class Solution {
 public:
     int findCircleNum(vector<vector<int>>& isConnected) {
-        DistJointset ds(isConnected.size());
         int n=isConnected.size();
+        Dist d(n);
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
                 if(isConnected[i][j]==1){
-                    ds.unionbysize(i,j);
+                    d.unionbysize(i,j);
                 }
             }
         }
         int count=0;
         for(int i=0;i<n;i++){
-            if(ds.parent[i]==i) count++;
+            if(d.parent[i]==i) count++;
         }
         return count;
+        
     }
 };
