@@ -1,64 +1,45 @@
 class Solution {
 public:
+    bool isvalid(int row,int col,int n,int m, vector<vector<int>> & grid,vector<vector<int>> & visited){
+        return row>=0 && row<n && col>=0 && col<m && grid[row][col]==1 && visited[row][col]==0;
+    }
     int orangesRotting(vector<vector<int>>& grid) {
-        int orange=0;
-        int count=0;
         int n=grid.size();
-        int m=grid[0].size();
-        vector<vector<int>> visited(n,vector<int> (m,0));
+        int orange=0;
         queue<pair<int,int>> q;
+        int m=grid[0].size();
+        vector<vector<int>> visited(n,vector<int>(m,0));
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
                 if(grid[i][j]==2){
                     q.push({i,j});
-                    count++;
                     visited[i][j]=1;
                 }
-                if(grid[i][j]!=0) orange++;
+                else if(grid[i][j]==1) orange++;
             }
         }
-        int ans=0;
-        if(count==orange) return 0;
+        int minite=0;
         while(!q.empty()){
+            if(orange==0) return minite;
             int size=q.size();
             for(int i=0;i<size;i++){
-                pair<int,int> p=q.front();
-                q.pop();
-                int row=p.first;
-                int col=p.second;
-                int nrow=row+1;
-                int ncol=col;
-                if(nrow>=0 && nrow<n && ncol>=0 && ncol<m && grid[nrow][ncol]==1 && visited[nrow][ncol]==0){
-                    q.push({nrow,ncol});
-                    visited[nrow][ncol]=1;
-                    count++;
-                }
-                nrow=row;
-                ncol=col+1;
-                if(nrow>=0 && nrow<n && ncol>=0 && ncol<m && grid[nrow][ncol]==1 && visited[nrow][ncol]==0){
-                    q.push({nrow,ncol});
-                    visited[nrow][ncol]=1;
-                    count++;
-                }
-                nrow=row-1;
-                ncol=col;
-                if(nrow>=0 && nrow<n && ncol>=0 && ncol<m && grid[nrow][ncol]==1 && visited[nrow][ncol]==0){
-                    q.push({nrow,ncol});
-                    visited[nrow][ncol]=1;
-                    count++;
-                }
-                nrow=row;
-                ncol=col-1;
-                if(nrow>=0 && nrow<n && ncol>=0 && ncol<m && grid[nrow][ncol]==1 && visited[nrow][ncol]==0){
-                    q.push({nrow,ncol});
-                    visited[nrow][ncol]=1;
-                    count++;
+                auto [row,col] =q.front(); q.pop();
+                int dr[4][2]={{0,1},{0,-1},{1,0},{-1,0}};
+                for(int j=0;j<4;j++){
+                    int nrow=row+dr[j][0];
+                    int ncol=col+dr[j][1];
+                    if(isvalid(nrow,ncol,n,m,grid,visited)){
+                        orange--;
+                        q.push({nrow,ncol});
+                        visited[nrow][ncol]=1;
+                    }
                 }
             }
-            ans++;
+             minite++;
         }
-        if(count==orange) return ans-1;
+        if(orange==0) return minite;
         return -1;
+
         
     }
 };
