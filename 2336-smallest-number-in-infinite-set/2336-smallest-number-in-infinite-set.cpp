@@ -2,7 +2,7 @@ class SmallestInfiniteSet {
 public:
     set<int> st;
     SmallestInfiniteSet() {
-        for(int i=1;i<1000;i++) st.insert(i);
+        for(int i=1;i<1001;i++) st.insert(i);
         
     }
     int popSmallest() {
@@ -12,7 +12,7 @@ public:
         
     }
     void addBack(int num) {
-        if(!st.count(num)) st.insert(num);
+        st.insert(num);
         
     }
 };
