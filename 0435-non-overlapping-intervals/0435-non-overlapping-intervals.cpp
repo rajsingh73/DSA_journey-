@@ -3,20 +3,20 @@ public:
     static bool comp(vector<int> first,vector<int> second){
         return first[1]<second[1];
     }
-    int eraseOverlapIntervals(vector<vector<int>>& arr) {
-        sort(arr.begin(),arr.end(),comp);
+    int eraseOverlapIntervals(vector<vector<int>>& intervals) {
+        sort(intervals.begin(),intervals.end(),comp);
+        int n=intervals.size();
+        int i=0;
         int count=0;
-        int second=arr[0][1];
-        int i=1;
-        while(i<arr.size()){
-            if(second>arr[i][0]){
+        while(i<n){
+            int second=intervals[i][1];
+            i++;
+            while(i<n && intervals[i][0]<second){
                 count++;
                 i++;
-                continue;
             }
-            second=arr[i][1];
-            i++;
         }
         return count;
+        
     }
 };
