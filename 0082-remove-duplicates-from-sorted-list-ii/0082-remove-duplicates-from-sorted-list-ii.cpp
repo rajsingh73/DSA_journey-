@@ -28,6 +28,5 @@ public:
         }
         ans->next=NULL;
         return dummy->next;
-        
     }
 };
