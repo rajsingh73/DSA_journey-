@@ -5,7 +5,7 @@ public:
         int high=potions.size()-1;
         while(low<=high){
             int mid=low+(high-low)/2;
-            long long temp=long long(potions[mid]*val);
+            long long temp=(potions[mid]*1LL*val);
             if(temp>=success) high=mid-1;
             else low=mid+1;
         }
