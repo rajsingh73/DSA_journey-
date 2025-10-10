@@ -2,7 +2,6 @@ class Solution {
 public:
     bool solve(string &s1,string &s2,string &s3,int i,int j,int val,int n,int m,vector<vector<int>> & dp){
         if(val==s3.size()) {
-            if((i>0 && j==0 && m>0) || (i==0 && j>0 && n>0)) return false;
             return true;
         };
         if(dp[i][j]!=-1) return dp[i][j];
