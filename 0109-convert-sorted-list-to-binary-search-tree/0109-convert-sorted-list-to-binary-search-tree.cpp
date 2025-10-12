@@ -21,41 +21,24 @@
  */
 class Solution {
 public:
-    vector<ListNode*> findMiddle(ListNode* start,ListNode*end){
-        int count=1;
-        ListNode * head=start;
-        while(head!=end) {
-            head=head->next;
-            count++;
-        }
-        ListNode * prev=NULL;
-        head=start;
-        int newcount=1;
-        if(count%2==1) count++;
-        count=count/2;
-        while(newcount<count){
-            newcount++;
-            prev=head;
-            head=head->next;
-        }
-        cout<<head->val<<endl;
-        return {prev,head,head->next};
-    }
-    TreeNode* solve(ListNode * start,ListNode * end){
-        if(start==NULL || end==NULL) return NULL;
-        if(start==end) return new TreeNode(start->val);
-        vector<ListNode*> v=findMiddle(start,end);
-        TreeNode * root=new TreeNode(v[1]->val);
-        root->left=solve(start,v[0]);
-        root->right=solve(v[2],end);
+    TreeNode * solve(vector<int> & nums,int start,int end){
+        if(start>end) return NULL;
+        if(start==end) return new TreeNode(nums[start]);
+        int mid=(start+end)/2;
+        TreeNode * root=new TreeNode(nums[mid]);
+        root->left=solve(nums,start,mid-1);
+        root->right=solve(nums,mid+1,end);
         return root;
     }
+
     TreeNode* sortedListToBST(ListNode* head) {
         if(head==NULL) return NULL;
-        ListNode* end=head;
-        while(end->next!=NULL){
-            end=end->next;
+        vector<int> nums;
+        ListNode* temp=head;
+        while(temp!=NULL){
+            nums.push_back(temp->val);
+            temp=temp->next;
         }
-        return solve(head,end);
+        return solve(nums,0,nums.size()-1);
     }
 };
