@@ -1,33 +1,67 @@
 class Solution {
 public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
-        vector<int> ans;
+        double first=-1;
+        double second=-1;
+        int count=0;
         int i=0;
         int j=0;
+        int total=nums1.size()+nums2.size();
+        if(total==1){
+            return nums1.size()?nums1[0]:nums2[0];
+        }
         while(i<nums1.size() && j<nums2.size()){
             if(nums1[i]<nums2[j]){
-                ans.push_back(nums1[i]);
+                if(first==-1) first=nums1[i];
+                else if(second==-1) second=nums1[i];
+                else{
+                    first=second;
+                    second=nums1[i];
+                }
                 i++;
             }
             else{
-                ans.push_back(nums2[j]);
+                if(first==-1) first=nums2[j];
+                else if(second==-1) second=nums2[j];
+                else{
+                    first=second;
+                    second=nums2[j];
+                }
                 j++;
             }
+            count++;
+            if(count==(total/2)+1){
+                return total%2==0?(first+second)/2.0:second;
+            }
+
         }
         while(i<nums1.size()){
-            ans.push_back(nums1[i]);
+            if(first==-1) first=nums1[i];
+            else if(second==-1) second=nums1[i];
+            else{
+                first=second;
+                second=nums1[i];
+            }
+            count++;
+            if(count==(total/2)+1){
+                return total%2==0?(first+second)/2.0:second;
+            }
             i++;
         }
         while(j<nums2.size()){
-            ans.push_back(nums2[j]);
+            cout<<"HELLO";
+            if(first==-1) first=nums2[j];
+            else if(second==-1) second=nums2[j];
+            else{
+                first=second;
+                second=nums2[j];
+            }
+            count++;
+            if(count==(total/2)+1){
+                return total%2==0?(first+second)/2.0:second;
+            }
             j++;
         }
-        int m=ans.size()/2;
-        if(ans.size()%2==0){
-            return (ans[m]+ans[m-1])/2.0;
-        }
-        else{
-            return ans[m];
-        }
+        return first;
     }
 };
