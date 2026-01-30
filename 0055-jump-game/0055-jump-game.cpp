@@ -2,7 +2,7 @@ class Solution {
 public:
     bool canJump(vector<int>& nums) {
         int i=0;
-        int n=nums.size();
+        int n=nums.size()-1;
         int maxi=nums[0];
         while(i<=maxi){
             if(maxi>=n) return true;
