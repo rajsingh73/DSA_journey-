@@ -1,33 +1,34 @@
 class Solution {
 public:
-    bool isvalid(int start,int end,string s){
-        while(start<end){
-            if(s[start]!=s[end]) return false;
-            start++;
-            end--;
+    bool ispalindrome(int i,int j,string &s){
+        while(i<j){
+            if(s[i]!=s[j]) return false;
+            i++;
+            j--;
         }
         return true;
     }
     string longestPalindrome(string s) {
-        map<char,vector<int>> mp;
+        if(s.size()==1) return s;
+        int i=0;
+        int ans=0;
         int start=0;
-        int end=0;
-        int length=0;
-        for(int i=0;i<s.size();i++){
-            if(mp.find(s[i])!=mp.end()){
+        map<char,vector<int>> mp;
+        while(i<s.size()){
+            if(mp.count(s[i])){
                 for(auto it: mp[s[i]]){
-                    if(isvalid(it,i,s)){
-                        int templength=i-it+1;
-                        if(templength>length){
+                    if(ispalindrome(it,i,s)){
+                        if(ans<i-it+1){
+                            ans=i-it+1;
                             start=it;
-                            end=i;
-                            length=templength;
                         }
-                    }
+                        break;
+                    } 
                 }
             }
             mp[s[i]].push_back(i);
+            i++;
         }
-        return s.substr(start,end-start+1);
+        return s.substr(start,ans);
     }
 };
