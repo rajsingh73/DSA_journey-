@@ -13,7 +13,7 @@ public:
                     j++;
                     k--;
                     while(j<nums.size() && nums[j]==nums[j-1]) j++;
-                    while(k>i && nums[k]==nums[k-1]) k--;
+                    while(k>i && nums[k]==nums[k+1]) k--;
                 }
                 else{
                     int val=nums[i]+nums[j]+nums[k];
