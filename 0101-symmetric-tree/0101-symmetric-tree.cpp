@@ -13,22 +13,20 @@ class Solution {
 public:
     void solve(TreeNode * first,TreeNode* second,bool & ans){
         if(ans==false) return;
-        if(first==NULL && second==NULL) return;
-        if(first==NULL || second==NULL){
-            ans=false;
-            return;
-        }
-        if(first->val!=second->val){
-            ans=false;
-            return;
-        }
-        solve(first->left,second->right,ans);
-        solve(first->right,second->left,ans);
+        if(first->val!=second->val) ans=false;
+        if(first->left && second->right) solve(first->left,second->right,ans);
+        else if(first->left) ans=false;
+        else if(second->right) ans=false;
+        if(first->right && second->left) solve(first->right,second->left,ans);
+        else if(first->right) ans=false;
+        else if(second->left) ans=false;
     }
     bool isSymmetric(TreeNode* root) {
         if(root==NULL) return true;
         bool ans=true;
-        solve(root->left,root->right,ans);
+        if(root->left && root->right) solve(root->left,root->right,ans);
+        else if(root->left) return false;
+        else if(root->right) return false;
         return ans;
         
     }
