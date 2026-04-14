@@ -98,6 +98,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | ------- | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
 | [0414-third-maximum-number](https://github.com/rajsingh73/DSA_journey-/tree/main/0414-third-maximum-number/) | Easy |
+| [0643-maximum-average-subarray-i](https://github.com/rajsingh73/DSA_journey-/tree/main/0643-maximum-average-subarray-i/) | Easy |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/rajsingh73/DSA_journey-/tree/main/1886-determine-whether-matrix-can-be-obtained-by-rotation/) | Easy |
 ## Divide and Conquer
 | Problem Name | Difficulty |
@@ -136,4 +137,8 @@ Feel free to connect with me or provide feedback on my solutions:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0101-symmetric-tree](https://github.com/rajsingh73/DSA_journey-/tree/main/0101-symmetric-tree/) | Easy |
+## Sliding Window
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0643-maximum-average-subarray-i](https://github.com/rajsingh73/DSA_journey-/tree/main/0643-maximum-average-subarray-i/) | Easy |
 <!---LeetCode Topics End-->
