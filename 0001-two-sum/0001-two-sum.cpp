@@ -3,10 +3,10 @@ public:
     vector<int> twoSum(vector<int>& nums, int target) {
         map<int,int> mp;
         for(int i=0;i<nums.size();i++){
-            int rem=target-nums[i];
-            if(mp.count(rem)) return {mp[rem],i};
+            if(mp.find(target-nums[i])!=mp.end()) return {mp[target-nums[i]],i};
             mp[nums[i]]=i;
         }
         return {-1,-1};
+        
     }
 };
