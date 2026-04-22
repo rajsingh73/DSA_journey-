@@ -96,6 +96,7 @@ Feel free to connect with me or provide feedback on my solutions:
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0001-two-sum](https://github.com/rajsingh73/DSA_journey-/tree/main/0001-two-sum/) | Easy |
 | [0215-kth-largest-element-in-an-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
 | [0414-third-maximum-number](https://github.com/rajsingh73/DSA_journey-/tree/main/0414-third-maximum-number/) | Easy |
 | [0643-maximum-average-subarray-i](https://github.com/rajsingh73/DSA_journey-/tree/main/0643-maximum-average-subarray-i/) | Easy |
@@ -144,4 +145,8 @@ Feel free to connect with me or provide feedback on my solutions:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0643-maximum-average-subarray-i](https://github.com/rajsingh73/DSA_journey-/tree/main/0643-maximum-average-subarray-i/) | Easy |
+## Hash Table
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0001-two-sum](https://github.com/rajsingh73/DSA_journey-/tree/main/0001-two-sum/) | Easy |
 <!---LeetCode Topics End-->
