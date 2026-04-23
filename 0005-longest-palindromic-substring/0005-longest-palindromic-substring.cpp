@@ -1,6 +1,6 @@
 class Solution {
 public:
-    bool ispalindrome(int i,int j,string &s){
+    bool palindrome(string s,int i,int j){
         while(i<j){
             if(s[i]!=s[j]) return false;
             i++;
@@ -9,26 +9,26 @@ public:
         return true;
     }
     string longestPalindrome(string s) {
-        if(s.size()==1) return s;
-        int i=0;
+        map<char,vector<int>> mp;
         int ans=0;
         int start=0;
-        map<char,vector<int>> mp;
-        while(i<s.size()){
-            if(mp.count(s[i])){
-                for(auto it: mp[s[i]]){
-                    if(ispalindrome(it,i,s)){
-                        if(ans<i-it+1){
+        int end=0;
+        for(int i=0;i<s.size();i++){
+            if(mp.find(s[i])!=mp.end()){
+                for(auto it:mp[s[i]]){
+                    if(palindrome(s,it,i)){
+                        if(i-it+1>ans){
                             ans=i-it+1;
                             start=it;
+                            end=i;
                         }
                         break;
-                    } 
+                    }
                 }
             }
             mp[s[i]].push_back(i);
-            i++;
         }
-        return s.substr(start,ans);
+        if(start==0 && end==0) return s.substr(0,1);
+        else return s.substr(start,ans);
     }
 };
