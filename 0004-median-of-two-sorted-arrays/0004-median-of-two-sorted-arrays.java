@@ -5,7 +5,7 @@ class Solution {
         int l=0,r=0,first=0,second=0;
         while(i<=half){
             second=first;
-            if( (l < nums1.length && (r >= nums2.length || nums1[l] <= nums2[r]))){
+            if( (l<nums1.length && (r >= nums2.length || nums1[l] <= nums2[r]))){
                 first=nums1[l];
                 l++;
             }
