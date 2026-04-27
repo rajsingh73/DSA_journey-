@@ -167,6 +167,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0002-add-two-numbers](https://github.com/rajsingh73/DSA_journey-/tree/main/0002-add-two-numbers/) | Medium |
+| [0007-reverse-integer](https://github.com/rajsingh73/DSA_journey-/tree/main/0007-reverse-integer/) | Medium |
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
