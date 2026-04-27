@@ -1,22 +1,14 @@
 class Solution {
 public:
     int reverse(int x) {
-        if(x==0) return x;
-        int first=1;
-        int ans=0;
-        while(x){
+        long long temp=0;
+        while(x!=0){
             int rem=x%10;
+            temp=temp*10+rem;
             x=x/10;
-            cout<<ans<<endl;
-            if(first && rem==0) continue;
-            if(ans<(INT_MIN/10)) return 0;
-            if(ans>(INT_MAX/10) ) return 0;
-            if(ans==(INT_MIN/10) && rem>8) return 0;
-            if(ans==(INT_MAX/10) && rem>7) return 0;
-            ans=(ans*10)+rem;
-            first=0;
         }
-        cout<<ans<<endl;
-        return ans;
+        if(temp<INT_MIN) return 0;
+        if(temp>INT_MAX) return 0;
+        return temp;
     }
 };
