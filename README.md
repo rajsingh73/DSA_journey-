@@ -177,6 +177,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/rajsingh73/DSA_journey-/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0005-longest-palindromic-substring](https://github.com/rajsingh73/DSA_journey-/tree/main/0005-longest-palindromic-substring/) | Medium |
+| [0008-string-to-integer-atoi](https://github.com/rajsingh73/DSA_journey-/tree/main/0008-string-to-integer-atoi/) | Medium |
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
