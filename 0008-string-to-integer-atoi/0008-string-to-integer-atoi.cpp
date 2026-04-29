@@ -2,23 +2,24 @@ class Solution {
 public:
     int myAtoi(string s) {
         int i=0;
-        int n=s.size();
-        while(i<n && s[i]==' ') i++;
-        bool positive=true;
-        if(s[i]=='+') i++;
-        else if(s[i]=='-'){
-            i++;
-            positive=false;
-        }
-        while(i<n && s[i]=='0') i++;
-        long long val=0;
-        while(i<n && isdigit(s[i])){
-            val=(val*10)+(s[i]-'0');
-            if(!positive && val>INT_MAX) return INT_MIN;
-            else if(val>INT_MAX) return INT_MAX;
+        int sign=1;
+        while(i<s.size()  && s[i]==' ') i++;
+        if(s[i]=='-'){
+            sign=-1;
             i++;
         }
-        if(!positive) return -1*val;
-        return val;
+        else if(s[i]=='+') i++;
+        while(i<s.size() && s[i]=='0') i++;
+        int ans=0;
+        while(i<s.size() && isdigit(s[i])){
+            int digit=s[i]-'0';
+            if (ans > INT_MAX / 10 || (ans == INT_MAX / 10 && digit > 7)) {
+                return sign == 1 ? INT_MAX : INT_MIN;
+            }
+            ans=(ans*10)+digit;
+            cout<<ans<<endl;
+            i++;
+        }
+        return ans*sign;
     }
 };
