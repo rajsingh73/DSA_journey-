@@ -102,6 +102,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | [0414-third-maximum-number](https://github.com/rajsingh73/DSA_journey-/tree/main/0414-third-maximum-number/) | Easy |
 | [0643-maximum-average-subarray-i](https://github.com/rajsingh73/DSA_journey-/tree/main/0643-maximum-average-subarray-i/) | Easy |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/rajsingh73/DSA_journey-/tree/main/1886-determine-whether-matrix-can-be-obtained-by-rotation/) | Easy |
+| [2398-maximum-number-of-robots-within-budget](https://github.com/rajsingh73/DSA_journey-/tree/main/2398-maximum-number-of-robots-within-budget/) | Hard |
 ## Divide and Conquer
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -116,6 +117,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
+| [2398-maximum-number-of-robots-within-budget](https://github.com/rajsingh73/DSA_journey-/tree/main/2398-maximum-number-of-robots-within-budget/) | Hard |
 ## Quickselect
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -155,6 +157,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | [0003-longest-substring-without-repeating-characters](https://github.com/rajsingh73/DSA_journey-/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0424-longest-repeating-character-replacement](https://github.com/rajsingh73/DSA_journey-/tree/main/0424-longest-repeating-character-replacement/) | Medium |
 | [0643-maximum-average-subarray-i](https://github.com/rajsingh73/DSA_journey-/tree/main/0643-maximum-average-subarray-i/) | Easy |
+| [2398-maximum-number-of-robots-within-budget](https://github.com/rajsingh73/DSA_journey-/tree/main/2398-maximum-number-of-robots-within-budget/) | Hard |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -187,6 +190,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/rajsingh73/DSA_journey-/tree/main/0004-median-of-two-sorted-arrays/) | Hard |
+| [2398-maximum-number-of-robots-within-budget](https://github.com/rajsingh73/DSA_journey-/tree/main/2398-maximum-number-of-robots-within-budget/) | Hard |
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -196,4 +200,16 @@ Feel free to connect with me or provide feedback on my solutions:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0005-longest-palindromic-substring](https://github.com/rajsingh73/DSA_journey-/tree/main/0005-longest-palindromic-substring/) | Medium |
+## Queue
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2398-maximum-number-of-robots-within-budget](https://github.com/rajsingh73/DSA_journey-/tree/main/2398-maximum-number-of-robots-within-budget/) | Hard |
+## Prefix Sum
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2398-maximum-number-of-robots-within-budget](https://github.com/rajsingh73/DSA_journey-/tree/main/2398-maximum-number-of-robots-within-budget/) | Hard |
+## Monotonic Queue
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2398-maximum-number-of-robots-within-budget](https://github.com/rajsingh73/DSA_journey-/tree/main/2398-maximum-number-of-robots-within-budget/) | Hard |
 <!---LeetCode Topics End-->
