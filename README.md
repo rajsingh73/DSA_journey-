@@ -103,6 +103,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | [0643-maximum-average-subarray-i](https://github.com/rajsingh73/DSA_journey-/tree/main/0643-maximum-average-subarray-i/) | Easy |
 | [1331-rank-transform-of-an-array](https://github.com/rajsingh73/DSA_journey-/tree/main/1331-rank-transform-of-an-array/) | Easy |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/rajsingh73/DSA_journey-/tree/main/1886-determine-whether-matrix-can-be-obtained-by-rotation/) | Easy |
+| [2089-find-target-indices-after-sorting-array](https://github.com/rajsingh73/DSA_journey-/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
 | [2090-k-radius-subarray-averages](https://github.com/rajsingh73/DSA_journey-/tree/main/2090-k-radius-subarray-averages/) | Medium |
 | [2398-maximum-number-of-robots-within-budget](https://github.com/rajsingh73/DSA_journey-/tree/main/2398-maximum-number-of-robots-within-budget/) | Hard |
 ## Divide and Conquer
@@ -116,6 +117,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | [0215-kth-largest-element-in-an-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
 | [0414-third-maximum-number](https://github.com/rajsingh73/DSA_journey-/tree/main/0414-third-maximum-number/) | Easy |
 | [1331-rank-transform-of-an-array](https://github.com/rajsingh73/DSA_journey-/tree/main/1331-rank-transform-of-an-array/) | Easy |
+| [2089-find-target-indices-after-sorting-array](https://github.com/rajsingh73/DSA_journey-/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -195,6 +197,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/rajsingh73/DSA_journey-/tree/main/0004-median-of-two-sorted-arrays/) | Hard |
+| [2089-find-target-indices-after-sorting-array](https://github.com/rajsingh73/DSA_journey-/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
 | [2398-maximum-number-of-robots-within-budget](https://github.com/rajsingh73/DSA_journey-/tree/main/2398-maximum-number-of-robots-within-budget/) | Hard |
 ## Two Pointers
 | Problem Name | Difficulty |
