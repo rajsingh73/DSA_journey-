@@ -2,14 +2,15 @@ class Solution {
 public:
     bool isPalindrome(string s) {
         int i=0;
-        int l=s.size()-1;
-        while(i<l){
-            while(i<l && !isalnum(s[i])) i++;
-            while(i<l && !isalnum(s[l])) l--;
-            cout<<s[i]<<" "<<s[l]<<endl;
-            if(tolower(s[i])!=tolower(s[l])) return false;
-            i++;
-            l--;
+        int j=s.size()-1;
+        while(i<j){
+            while(i<j && !isalnum(s[i])) i++;
+            while(i<j && !isalnum(s[j])) j--;
+            if(i<j){
+                if(tolower(s[i])!=tolower(s[j])) return false;
+                i++;
+                j--;
+            }
         }
         return true;
         
