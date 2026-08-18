@@ -181,10 +181,12 @@ Feel free to connect with me or provide feedback on my solutions:
 | [0002-add-two-numbers](https://github.com/rajsingh73/DSA_journey-/tree/main/0002-add-two-numbers/) | Medium |
 | [0007-reverse-integer](https://github.com/rajsingh73/DSA_journey-/tree/main/0007-reverse-integer/) | Medium |
 | [0009-palindrome-number](https://github.com/rajsingh73/DSA_journey-/tree/main/0009-palindrome-number/) | Easy |
+| [0509-fibonacci-number](https://github.com/rajsingh73/DSA_journey-/tree/main/0509-fibonacci-number/) | Easy |
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0002-add-two-numbers](https://github.com/rajsingh73/DSA_journey-/tree/main/0002-add-two-numbers/) | Medium |
+| [0509-fibonacci-number](https://github.com/rajsingh73/DSA_journey-/tree/main/0509-fibonacci-number/) | Easy |
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -208,6 +210,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0005-longest-palindromic-substring](https://github.com/rajsingh73/DSA_journey-/tree/main/0005-longest-palindromic-substring/) | Medium |
+| [0509-fibonacci-number](https://github.com/rajsingh73/DSA_journey-/tree/main/0509-fibonacci-number/) | Easy |
 ## Queue
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -220,4 +223,8 @@ Feel free to connect with me or provide feedback on my solutions:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2398-maximum-number-of-robots-within-budget](https://github.com/rajsingh73/DSA_journey-/tree/main/2398-maximum-number-of-robots-within-budget/) | Hard |
+## Memoization
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0509-fibonacci-number](https://github.com/rajsingh73/DSA_journey-/tree/main/0509-fibonacci-number/) | Easy |
 <!---LeetCode Topics End-->
