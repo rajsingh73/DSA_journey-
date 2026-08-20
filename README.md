@@ -101,6 +101,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | [0026-remove-duplicates-from-sorted-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0189-rotate-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0189-rotate-array/) | Medium |
 | [0215-kth-largest-element-in-an-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
+| [0283-move-zeroes](https://github.com/rajsingh73/DSA_journey-/tree/main/0283-move-zeroes/) | Easy |
 | [0414-third-maximum-number](https://github.com/rajsingh73/DSA_journey-/tree/main/0414-third-maximum-number/) | Easy |
 | [0643-maximum-average-subarray-i](https://github.com/rajsingh73/DSA_journey-/tree/main/0643-maximum-average-subarray-i/) | Easy |
 | [1331-rank-transform-of-an-array](https://github.com/rajsingh73/DSA_journey-/tree/main/1331-rank-transform-of-an-array/) | Easy |
@@ -212,6 +213,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | [0026-remove-duplicates-from-sorted-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0125-valid-palindrome](https://github.com/rajsingh73/DSA_journey-/tree/main/0125-valid-palindrome/) | Easy |
 | [0189-rotate-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0189-rotate-array/) | Medium |
+| [0283-move-zeroes](https://github.com/rajsingh73/DSA_journey-/tree/main/0283-move-zeroes/) | Easy |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
