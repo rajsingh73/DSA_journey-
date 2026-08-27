@@ -99,6 +99,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | [0001-two-sum](https://github.com/rajsingh73/DSA_journey-/tree/main/0001-two-sum/) | Easy |
 | [0004-median-of-two-sorted-arrays](https://github.com/rajsingh73/DSA_journey-/tree/main/0004-median-of-two-sorted-arrays/) | Hard |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
+| [0136-single-number](https://github.com/rajsingh73/DSA_journey-/tree/main/0136-single-number/) | Easy |
 | [0189-rotate-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0189-rotate-array/) | Medium |
 | [0215-kth-largest-element-in-an-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
 | [0283-move-zeroes](https://github.com/rajsingh73/DSA_journey-/tree/main/0283-move-zeroes/) | Easy |
@@ -236,4 +237,8 @@ Feel free to connect with me or provide feedback on my solutions:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0509-fibonacci-number](https://github.com/rajsingh73/DSA_journey-/tree/main/0509-fibonacci-number/) | Easy |
+## Bit Manipulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0136-single-number](https://github.com/rajsingh73/DSA_journey-/tree/main/0136-single-number/) | Easy |
 <!---LeetCode Topics End-->
