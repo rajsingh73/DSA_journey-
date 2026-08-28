@@ -99,6 +99,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | [0001-two-sum](https://github.com/rajsingh73/DSA_journey-/tree/main/0001-two-sum/) | Easy |
 | [0004-median-of-two-sorted-arrays](https://github.com/rajsingh73/DSA_journey-/tree/main/0004-median-of-two-sorted-arrays/) | Hard |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
+| [0053-maximum-subarray](https://github.com/rajsingh73/DSA_journey-/tree/main/0053-maximum-subarray/) | Medium |
 | [0075-sort-colors](https://github.com/rajsingh73/DSA_journey-/tree/main/0075-sort-colors/) | Medium |
 | [0136-single-number](https://github.com/rajsingh73/DSA_journey-/tree/main/0136-single-number/) | Easy |
 | [0169-majority-element](https://github.com/rajsingh73/DSA_journey-/tree/main/0169-majority-element/) | Easy |
@@ -118,6 +119,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/rajsingh73/DSA_journey-/tree/main/0004-median-of-two-sorted-arrays/) | Hard |
+| [0053-maximum-subarray](https://github.com/rajsingh73/DSA_journey-/tree/main/0053-maximum-subarray/) | Medium |
 | [0169-majority-element](https://github.com/rajsingh73/DSA_journey-/tree/main/0169-majority-element/) | Easy |
 | [0215-kth-largest-element-in-an-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
 ## Sorting
@@ -227,6 +229,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0005-longest-palindromic-substring](https://github.com/rajsingh73/DSA_journey-/tree/main/0005-longest-palindromic-substring/) | Medium |
+| [0053-maximum-subarray](https://github.com/rajsingh73/DSA_journey-/tree/main/0053-maximum-subarray/) | Medium |
 | [0509-fibonacci-number](https://github.com/rajsingh73/DSA_journey-/tree/main/0509-fibonacci-number/) | Easy |
 ## Queue
 | Problem Name | Difficulty |
