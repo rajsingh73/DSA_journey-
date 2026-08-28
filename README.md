@@ -99,6 +99,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | [0001-two-sum](https://github.com/rajsingh73/DSA_journey-/tree/main/0001-two-sum/) | Easy |
 | [0004-median-of-two-sorted-arrays](https://github.com/rajsingh73/DSA_journey-/tree/main/0004-median-of-two-sorted-arrays/) | Hard |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
+| [0075-sort-colors](https://github.com/rajsingh73/DSA_journey-/tree/main/0075-sort-colors/) | Medium |
 | [0136-single-number](https://github.com/rajsingh73/DSA_journey-/tree/main/0136-single-number/) | Easy |
 | [0189-rotate-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0189-rotate-array/) | Medium |
 | [0215-kth-largest-element-in-an-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
@@ -120,6 +121,7 @@ Feel free to connect with me or provide feedback on my solutions:
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0075-sort-colors](https://github.com/rajsingh73/DSA_journey-/tree/main/0075-sort-colors/) | Medium |
 | [0215-kth-largest-element-in-an-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
 | [0414-third-maximum-number](https://github.com/rajsingh73/DSA_journey-/tree/main/0414-third-maximum-number/) | Easy |
 | [1331-rank-transform-of-an-array](https://github.com/rajsingh73/DSA_journey-/tree/main/1331-rank-transform-of-an-array/) | Easy |
@@ -213,6 +215,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | ------- | ------- |
 | [0005-longest-palindromic-substring](https://github.com/rajsingh73/DSA_journey-/tree/main/0005-longest-palindromic-substring/) | Medium |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
+| [0075-sort-colors](https://github.com/rajsingh73/DSA_journey-/tree/main/0075-sort-colors/) | Medium |
 | [0125-valid-palindrome](https://github.com/rajsingh73/DSA_journey-/tree/main/0125-valid-palindrome/) | Easy |
 | [0189-rotate-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0189-rotate-array/) | Medium |
 | [0283-move-zeroes](https://github.com/rajsingh73/DSA_journey-/tree/main/0283-move-zeroes/) | Easy |
@@ -241,4 +244,12 @@ Feel free to connect with me or provide feedback on my solutions:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0136-single-number](https://github.com/rajsingh73/DSA_journey-/tree/main/0136-single-number/) | Easy |
+## Quicksort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0075-sort-colors](https://github.com/rajsingh73/DSA_journey-/tree/main/0075-sort-colors/) | Medium |
+## Bubble Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0075-sort-colors](https://github.com/rajsingh73/DSA_journey-/tree/main/0075-sort-colors/) | Medium |
 <!---LeetCode Topics End-->
