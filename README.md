@@ -101,6 +101,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | [0026-remove-duplicates-from-sorted-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0075-sort-colors](https://github.com/rajsingh73/DSA_journey-/tree/main/0075-sort-colors/) | Medium |
 | [0136-single-number](https://github.com/rajsingh73/DSA_journey-/tree/main/0136-single-number/) | Easy |
+| [0169-majority-element](https://github.com/rajsingh73/DSA_journey-/tree/main/0169-majority-element/) | Easy |
 | [0189-rotate-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0189-rotate-array/) | Medium |
 | [0215-kth-largest-element-in-an-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
 | [0283-move-zeroes](https://github.com/rajsingh73/DSA_journey-/tree/main/0283-move-zeroes/) | Easy |
@@ -117,11 +118,13 @@ Feel free to connect with me or provide feedback on my solutions:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/rajsingh73/DSA_journey-/tree/main/0004-median-of-two-sorted-arrays/) | Hard |
+| [0169-majority-element](https://github.com/rajsingh73/DSA_journey-/tree/main/0169-majority-element/) | Easy |
 | [0215-kth-largest-element-in-an-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0075-sort-colors](https://github.com/rajsingh73/DSA_journey-/tree/main/0075-sort-colors/) | Medium |
+| [0169-majority-element](https://github.com/rajsingh73/DSA_journey-/tree/main/0169-majority-element/) | Easy |
 | [0215-kth-largest-element-in-an-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
 | [0414-third-maximum-number](https://github.com/rajsingh73/DSA_journey-/tree/main/0414-third-maximum-number/) | Easy |
 | [1331-rank-transform-of-an-array](https://github.com/rajsingh73/DSA_journey-/tree/main/1331-rank-transform-of-an-array/) | Easy |
@@ -177,6 +180,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | ------- | ------- |
 | [0001-two-sum](https://github.com/rajsingh73/DSA_journey-/tree/main/0001-two-sum/) | Easy |
 | [0003-longest-substring-without-repeating-characters](https://github.com/rajsingh73/DSA_journey-/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
+| [0169-majority-element](https://github.com/rajsingh73/DSA_journey-/tree/main/0169-majority-element/) | Easy |
 | [0424-longest-repeating-character-replacement](https://github.com/rajsingh73/DSA_journey-/tree/main/0424-longest-repeating-character-replacement/) | Medium |
 | [1331-rank-transform-of-an-array](https://github.com/rajsingh73/DSA_journey-/tree/main/1331-rank-transform-of-an-array/) | Easy |
 ## Linked List
@@ -252,4 +256,12 @@ Feel free to connect with me or provide feedback on my solutions:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0075-sort-colors](https://github.com/rajsingh73/DSA_journey-/tree/main/0075-sort-colors/) | Medium |
+## Counting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0169-majority-element](https://github.com/rajsingh73/DSA_journey-/tree/main/0169-majority-element/) | Easy |
+## Boyer–Moore Majority Vote Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0169-majority-element](https://github.com/rajsingh73/DSA_journey-/tree/main/0169-majority-element/) | Easy |
 <!---LeetCode Topics End-->
