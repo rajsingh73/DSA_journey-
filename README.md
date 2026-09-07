@@ -109,6 +109,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | [0414-third-maximum-number](https://github.com/rajsingh73/DSA_journey-/tree/main/0414-third-maximum-number/) | Easy |
 | [0485-max-consecutive-ones](https://github.com/rajsingh73/DSA_journey-/tree/main/0485-max-consecutive-ones/) | Easy |
 | [0643-maximum-average-subarray-i](https://github.com/rajsingh73/DSA_journey-/tree/main/0643-maximum-average-subarray-i/) | Easy |
+| [0922-sort-array-by-parity-ii](https://github.com/rajsingh73/DSA_journey-/tree/main/0922-sort-array-by-parity-ii/) | Easy |
 | [1331-rank-transform-of-an-array](https://github.com/rajsingh73/DSA_journey-/tree/main/1331-rank-transform-of-an-array/) | Easy |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/rajsingh73/DSA_journey-/tree/main/1752-check-if-array-is-sorted-and-rotated/) | Easy |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/rajsingh73/DSA_journey-/tree/main/1886-determine-whether-matrix-can-be-obtained-by-rotation/) | Easy |
@@ -129,6 +130,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | [0169-majority-element](https://github.com/rajsingh73/DSA_journey-/tree/main/0169-majority-element/) | Easy |
 | [0215-kth-largest-element-in-an-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
 | [0414-third-maximum-number](https://github.com/rajsingh73/DSA_journey-/tree/main/0414-third-maximum-number/) | Easy |
+| [0922-sort-array-by-parity-ii](https://github.com/rajsingh73/DSA_journey-/tree/main/0922-sort-array-by-parity-ii/) | Easy |
 | [1331-rank-transform-of-an-array](https://github.com/rajsingh73/DSA_journey-/tree/main/1331-rank-transform-of-an-array/) | Easy |
 | [2089-find-target-indices-after-sorting-array](https://github.com/rajsingh73/DSA_journey-/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
 ## Heap (Priority Queue)
@@ -225,6 +227,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | [0125-valid-palindrome](https://github.com/rajsingh73/DSA_journey-/tree/main/0125-valid-palindrome/) | Easy |
 | [0189-rotate-array](https://github.com/rajsingh73/DSA_journey-/tree/main/0189-rotate-array/) | Medium |
 | [0283-move-zeroes](https://github.com/rajsingh73/DSA_journey-/tree/main/0283-move-zeroes/) | Easy |
+| [0922-sort-array-by-parity-ii](https://github.com/rajsingh73/DSA_journey-/tree/main/0922-sort-array-by-parity-ii/) | Easy |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
