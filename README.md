@@ -153,12 +153,14 @@ Feel free to connect with me or provide feedback on my solutions:
 | [0102-binary-tree-level-order-traversal](https://github.com/rajsingh73/DSA_journey-/tree/main/0102-binary-tree-level-order-traversal/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/rajsingh73/DSA_journey-/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/rajsingh73/DSA_journey-/tree/main/0543-diameter-of-binary-tree/) | Easy |
+| [2265-count-nodes-equal-to-average-of-subtree](https://github.com/rajsingh73/DSA_journey-/tree/main/2265-count-nodes-equal-to-average-of-subtree/) | Medium |
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0101-symmetric-tree](https://github.com/rajsingh73/DSA_journey-/tree/main/0101-symmetric-tree/) | Easy |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/rajsingh73/DSA_journey-/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/rajsingh73/DSA_journey-/tree/main/0543-diameter-of-binary-tree/) | Easy |
+| [2265-count-nodes-equal-to-average-of-subtree](https://github.com/rajsingh73/DSA_journey-/tree/main/2265-count-nodes-equal-to-average-of-subtree/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -171,6 +173,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | [0102-binary-tree-level-order-traversal](https://github.com/rajsingh73/DSA_journey-/tree/main/0102-binary-tree-level-order-traversal/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/rajsingh73/DSA_journey-/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/rajsingh73/DSA_journey-/tree/main/0543-diameter-of-binary-tree/) | Easy |
+| [2265-count-nodes-equal-to-average-of-subtree](https://github.com/rajsingh73/DSA_journey-/tree/main/2265-count-nodes-equal-to-average-of-subtree/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
