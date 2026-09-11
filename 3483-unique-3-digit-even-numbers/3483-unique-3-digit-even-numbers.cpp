@@ -1,27 +1,23 @@
 class Solution {
 public:
-    void solve(vector<int>& digits, int& count, int value, int depth, vector<bool>& used) {
-        if (depth == 3) {
-            if (value % 2 == 0) {
-                count++;
-                cout << value << " ";
-            }
-            return;
+    int solve(vector<int> & freq,int pos){
+        if(pos==3) return 1;
+        int count=0;
+        for(int digit=0;digit<10;digit++){
+            if(freq[digit]==0) continue;
+            if(pos==0 && digit==0) continue;
+            if(pos==2 && digit%2!=0) continue;
+            freq[digit]--;
+            count+=solve(freq,pos+1);
+            freq[digit]++;
         }
-        for (int i = 0; i < digits.size(); ++i) {
-            if (used[i]) continue;
-            if (depth == 0 && digits[i] == 0) continue;
-            if (i > 0 && digits[i] == digits[i - 1] && !used[i-1]) continue;
-            used[i] = true;
-            solve(digits, count, value * 10 + digits[i], depth + 1, used);
-            used[i] = false;
-        }
+        return count;
     }
     int totalNumbers(vector<int>& digits) {
-        int count = 0;
-        sort(digits.begin(), digits.end());
-        vector<bool> used(digits.size(), false);
-        solve(digits, count, 0, 0, used);
-        return count;
+        vector<int> freq(10,0);
+        for(auto it: digits){
+            freq[it]++;
+        }
+        return solve(freq,0);
     }
 };
