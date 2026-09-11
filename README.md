@@ -116,6 +116,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | [2089-find-target-indices-after-sorting-array](https://github.com/rajsingh73/DSA_journey-/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
 | [2090-k-radius-subarray-averages](https://github.com/rajsingh73/DSA_journey-/tree/main/2090-k-radius-subarray-averages/) | Medium |
 | [2398-maximum-number-of-robots-within-budget](https://github.com/rajsingh73/DSA_journey-/tree/main/2398-maximum-number-of-robots-within-budget/) | Hard |
+| [3483-unique-3-digit-even-numbers](https://github.com/rajsingh73/DSA_journey-/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
 ## Divide and Conquer
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -190,6 +191,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | [0169-majority-element](https://github.com/rajsingh73/DSA_journey-/tree/main/0169-majority-element/) | Easy |
 | [0424-longest-repeating-character-replacement](https://github.com/rajsingh73/DSA_journey-/tree/main/0424-longest-repeating-character-replacement/) | Medium |
 | [1331-rank-transform-of-an-array](https://github.com/rajsingh73/DSA_journey-/tree/main/1331-rank-transform-of-an-array/) | Easy |
+| [3483-unique-3-digit-even-numbers](https://github.com/rajsingh73/DSA_journey-/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -207,6 +209,7 @@ Feel free to connect with me or provide feedback on my solutions:
 | ------- | ------- |
 | [0002-add-two-numbers](https://github.com/rajsingh73/DSA_journey-/tree/main/0002-add-two-numbers/) | Medium |
 | [0509-fibonacci-number](https://github.com/rajsingh73/DSA_journey-/tree/main/0509-fibonacci-number/) | Easy |
+| [3483-unique-3-digit-even-numbers](https://github.com/rajsingh73/DSA_journey-/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -273,4 +276,8 @@ Feel free to connect with me or provide feedback on my solutions:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0169-majority-element](https://github.com/rajsingh73/DSA_journey-/tree/main/0169-majority-element/) | Easy |
+## Enumeration
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3483-unique-3-digit-even-numbers](https://github.com/rajsingh73/DSA_journey-/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
 <!---LeetCode Topics End-->
